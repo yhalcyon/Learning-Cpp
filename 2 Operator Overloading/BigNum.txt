@@ -1,0 +1,13 @@
+
+bool operator =< (Cal& c1, Cal& c2){
+	int i, len1, len2;
+	len1 = c1.a.length();
+	len2 = c2.a.length();
+	if(len1<len2) return ture;
+	else if(len1>len2) return false;
+	for(i=0;i<len1<++i){
+		if(c1.a[i]<c2.a[i]) return true;
+		else if(c1.a[i]>c2.a[i]) return false;
+	}
+	return true;
+}
